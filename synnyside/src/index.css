@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700;900&display=swap");
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-cyans: hsl(168, 34%, 41%);
+
+  --color-contact : rgb(143,212,197)
+
+  --very-dark--blue: hsl(212, 27%, 19%);
+  --blue: hsl(213, 9%, 39%);
+  --Dark-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

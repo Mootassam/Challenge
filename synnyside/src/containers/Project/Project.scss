@@ -1,0 +1,16 @@
+.app__project {
+  flex: 1;
+  display: flex;
+  margin-bottom: -0.3rem;
+  img {
+    width: 25%;
+    @media screen and (max-width: 1440px) {
+      width: 50%;
+      margin: 0 0 -0.3rem;
+      bottom: 0;
+    }
+    @media screen and (min-width: 2000px) {
+      width: 50%;
+    }
+  }
+}

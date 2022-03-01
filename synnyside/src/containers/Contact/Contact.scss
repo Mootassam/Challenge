@@ -1,0 +1,36 @@
+.app__contact {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(143, 212, 197);
+
+  h3 {
+    padding: 4rem 0 0rem;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(50, 120, 106);
+  }
+  .app__contact-items {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    li {
+      margin: 3rem 1.2rem 5rem;
+      list-style: none;
+      color: #6bafa0;
+    }
+  }
+  .app__contact-icons {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 0 4rem;
+
+    span {
+      font-size: 2rem;
+      padding: 0 0.7rem;
+      color: #6bafa0;
+    }
+  }
+}

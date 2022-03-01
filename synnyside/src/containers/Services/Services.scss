@@ -1,0 +1,94 @@
+.app__testimonials {
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 8rem;
+
+  .app__testimonials-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      margin: 8rem 0 6rem;
+      font-family: "Fraunces, serif";
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--Grayish-blue);
+      letter-spacing: 0.2rem;
+      @media screen and (max-width: 900px) {
+        text-align: center;
+        flex-direction: column;
+        margin: 2rem 0 5rem;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 5rem 0 0;
+    }
+    @media screen and (max-width: 900px) {
+      display: flex;
+    }
+  }
+  .app__testimonials-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .app__testimonials-items {
+      justify-items: center;
+      justify-content: center;
+      display: flex;
+      padding: 0 21rem 0;
+
+      @media screen and (max-width: 1440px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .p {
+        flex-direction: column;
+        @media screen and (max-width: 900px) {
+          min-width: none;
+          padding: 0 1rem;
+        }
+        img {
+          width: 20%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+        span {
+          padding: 2rem 1rem 5rem;
+          color: var(--blue);
+          text-align: center;
+          @media screen and (max-width: 900px) {
+            margin: 0;
+            padding: 2.3rem 2rem 2rem;
+          }
+        }
+        p {
+          text-align: justify;
+        }
+        .author {
+          color: var(--very-dark--blue);
+          font-weight: bold;
+          padding-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+        .post {
+          @media screen and (max-width: 900px) {
+            margin: 0rem 0rem 4rem;
+          }
+        }
+      }
+    }
+  }
+}
