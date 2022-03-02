@@ -2,13 +2,13 @@ p {
   color: var(--Grayish-blue);
 }
 .app__about {
-  flex-direction: column;
-  width: auto;
+  // flex-direction: column;
+
   .app__about-eagle {
     display: flex;
     justify-content: center;
     margin-bottom: -0.3rem;
-    height: auto;
+
     @media screen and (max-width: 900px) {
       flex-direction: column;
     }
@@ -36,8 +36,7 @@ p {
     }
     img {
       width: 100%;
-
-      object-fit: contain;
+      object-fit: cover;
     }
     @media screen and (max-width: 900px) {
       width: 100%;
