@@ -6,7 +6,7 @@
   align-items: center;
   padding: 2rem 2rem;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   @media screen and (max-widht: 900px) {
     padding: 0.3rem 300rem;
   }
@@ -39,19 +39,24 @@
       height: 60px;
       align-items: center;
       border-radius: 45cm;
+      cursor: pointer;
 
       li {
         text-align: center;
         padding-top: 17px;
         align-items: center;
-        color: var(--white);
-        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: var(--white);
+        }
       }
       &:hover {
         background-color: var(--white);
         li {
-          color: #000;
-          text-transform: uppercase;
+          a {
+            color: #000;
+            text-transform: uppercase;
+          }
         }
       }
     }
@@ -60,16 +65,57 @@
 
 .app__navbar-menu {
   @media screen and (min-width: 900px) {
-    display: felx;
+    flex-direction: column;
     display: none;
   }
-  ul {
-    li {
-      text-align: center;
-      list-style: none;
-    }
+}
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.app__navbar-item {
+  @media screen and (min-width: 1440px) {
+    display: none;
   }
-  .app__navbar-items {
-    background-color: var(--white);
+  margin: 7rem 1rem 1rem 0;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--white);
+  width: 80%;
+  height: 40%;
+
+  ul {
+    padding: 2rem 0 2rem;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    span {
+      justify-items: center;
+      text-align: center;
+      width: 140px;
+      height: 60px;
+      align-items: center;
+      border-radius: 45cm;
+
+      li {
+        text-align: center;
+        padding: 1rem 0 2rem;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: var(--very-dark-blue);
+        }
+      }
+      &:hover {
+        background-color: var(--very-dark-blue);
+        li {
+          a {
+            color: var(--very-dark-blue);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
 }

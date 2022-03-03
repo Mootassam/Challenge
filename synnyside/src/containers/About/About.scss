@@ -53,26 +53,78 @@ p {
   .app__about-cherry {
     display: flex;
     width: 100%;
-    align-items: flex-end;
-    position: relative;
-
     .app-about-cherry-blog {
       width: 50%;
+      position: relative;
+      .blog-text-cherry {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        padding: 0 15rem 7rem;
+        text-align: center;
 
-      .blog-text {
+        @media screen and (max-width: 1440px) {
+          padding: 0rem 7rem 5rem;
+        }
+        @media screen and (max-width: 375px) {
+          padding: 0 2rem 2rem;
+          h3 {
+            font-size: 1.1rem;
+          }
+          span {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+            padding-top: -1rem;
+          }
+        }
+        h3 {
+          padding-bottom: 2rem;
+        }
+        span {
+          padding-bottom: 1rem;
+        }
+      }
+      .blog-image-cherry {
+        position: relative;
+        z-index: 0;
+
+        img {
+          margin: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .app-about-orange-blog {
+      width: 50%;
+      position: relative;
+      .blog-text-orange {
         position: absolute;
         z-index: 1;
         bottom: 0;
-        padding: 0 8rem 7rem;
+        padding: 0 15rem 7rem;
         text-align: center;
+        @media screen and (max-width: 1440px) {
+          padding: 0rem 7rem 5rem;
+        }
+        @media screen and (max-width: 375px) {
+          padding: 0rem 2rem 1rem;
+          h3 {
+            font-size: 1.1rem;
+            padding-bottom: 0.1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
         h3 {
-          bottom: 0px;
+          padding-bottom: 2rem;
         }
         span {
-          bottom: 0px;
         }
       }
-      .blog-image {
+      .blog-image-orange {
         position: relative;
         z-index: 0;
         img {
@@ -85,6 +137,9 @@ p {
     @media screen and (max-width: 900px) {
       flex-direction: column;
       .app-about-cherry-blog {
+        width: 100%;
+      }
+      .app-about-orange-blog {
         width: 100%;
       }
     }
