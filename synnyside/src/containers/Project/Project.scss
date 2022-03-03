@@ -1,6 +1,9 @@
 .app__project {
+  width: 100%;
+  flex: 1;
   display: flex;
   margin-bottom: -0.4rem;
+
   img {
     width: 25%;
     @media screen and (max-width: 900px) {

@@ -12,7 +12,7 @@ const Services = () => {
       <div className='app__testimonials-section'>
         <div className='app__testimonials-items'>
           <div className='app__testimonials-section p'>
-            <img src={P1} alt='' srcset='' />
+            <img src={P1} alt='' />
             <span>
               We put trust Sunnysdie and they delivered, making sure our needs
               were met and dealines were always hit .
@@ -21,7 +21,7 @@ const Services = () => {
             <p className='post'>marketing Director</p>
           </div>
           <div className='app__testimonials-section p'>
-            <img src={P2} alt='' srcset='' />
+            <img src={P2} alt='' />
             <span>
               We put trust Sunnysdie and they delivered, making sure our needs
               were met and dealines were always hit .
@@ -30,7 +30,7 @@ const Services = () => {
             <p className='post'>marketing Director</p>
           </div>
           <div className='app__testimonials-section p'>
-            <img src={P3} alt='' srcset='' />
+            <img src={P3} alt='' />
             <span>
               We put trust Sunnysdie and they delivered, making sure our needs
               were met and dealines were always hit .

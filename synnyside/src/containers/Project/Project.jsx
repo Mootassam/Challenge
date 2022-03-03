@@ -6,10 +6,10 @@ const Project = () => {
   return (
     <div className='app__project'>
       <div className='app_project-img'>
-        <img src={Milk} alt='' srcset='' />
-        <img src={orangeCub} alt='' srcset='' />
-        <img src={cone} alt='' srcset='' />
-        <img src={SugarCubes} alt='' srcset='' />
+        <img src={Milk} alt='photo_milk' />
+        <img src={orangeCub} alt='photo_club' />
+        <img src={cone} alt='photo_cune' />
+        <img src={SugarCubes} alt='photo_sugar' />
       </div>
     </div>
   );

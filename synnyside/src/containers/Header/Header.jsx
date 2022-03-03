@@ -11,7 +11,7 @@ const Header = () => {
       <div className='app__header-text'>
         <h3>We are Creatives</h3>
         <div className='app__header img-text'>
-          <img src={ArrowDown} alt='' srcset='' />
+          <img src={ArrowDown} alt='' />
         </div>
       </div>
     </div>
