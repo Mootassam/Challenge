@@ -6,6 +6,7 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
+import { AppWrap } from "../../wrapper";
 const Contact = () => {
   return (
     <div className='app__contact'>
@@ -34,4 +35,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default AppWrap(Contact, "Contact");

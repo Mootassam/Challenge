@@ -1,7 +1,7 @@
 import React from "react";
 import { cone, Milk, orangeCub, SugarCubes } from "../../assets";
 import "./Project.scss";
-
+import { AppWrap } from "../../wrapper";
 const Project = () => {
   return (
     <div className='app__project'>
@@ -15,4 +15,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default AppWrap(Project, "Projects");

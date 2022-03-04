@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 import { Cherry, Cup, Eagle, Orange } from "../../assets";
+import { AppWrap } from "../../wrapper";
 const About = () => {
   return (
     <div className='app__about'>
@@ -65,4 +66,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "About");

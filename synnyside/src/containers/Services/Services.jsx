@@ -1,6 +1,7 @@
 import React from "react";
 import { P1, P2, P3 } from "../../assets";
 import "./Services.scss";
+import { AppWrap } from "../../wrapper";
 const Services = () => {
   return (
     <div className='app__testimonials'>
@@ -44,4 +45,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default AppWrap(Services, "Services");
