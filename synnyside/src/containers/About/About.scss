@@ -1,5 +1,14 @@
 p {
   color: var(--Grayish-blue);
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+h1 {
+  color: var(--very-dark-blue);
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
 }
 .app__about {
   // flex-direction: column;
@@ -16,9 +25,33 @@ p {
       justify-content: flex-start;
       width: 50%;
       height: 50%;
+      align-items: center;
+      .eagle-button {
+        align-items: center;
+        p {
+          color: var(--very-dark-blue);
+          padding-top: 2rem;
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          font-family: "Fraunces, serif";
+          letter-spacing: 0.3px;
+          font-weight: bolder;
+          position: absolute;
+          cursor: pointer;
+          div {
+            height: 6px;
+            background-color: var(--yellow);
+            border-radius: 5px;
+          }
+          .pink__color {
+            height: 6px;
+            background-color: var(--soft-red);
+            border-radius: 5px;
+          }
+        }
+      }
       h1 {
         padding: 0 5rem 3rem;
-        color: var(--very-dark--blue);
         font-size: 2.4rem;
       }
       p {

@@ -103,6 +103,8 @@ span {
   width: 100%;
   .app-about-cherry-blog {
     width: 50%;
+    margin: 0;
+    padding: 0;
     position: relative;
     .blog-text-cherry {
       position: absolute;
@@ -148,6 +150,7 @@ span {
 
   .app-about-orange-blog {
     width: 50%;
+    margin: 0;
     position: relative;
     .blog-text-orange {
       position: absolute;
@@ -180,8 +183,8 @@ span {
     .blog-image-orange {
       position: relative;
       z-index: 0;
+      padding-bottom: 0;
       img {
-        margin: 0;
         width: 100%;
         object-fit: cover;
       }
