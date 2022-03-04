@@ -11,3 +11,5 @@ export { default as cone } from "./images/desktop/image-gallery-cone.jpg";
 export { default as Milk } from "./images/desktop/image-gallery-milkbottles.jpg";
 export { default as SugarCubes } from "./images/desktop/image-gallery-sugarcubes.jpg";
 export { default as orangeCub } from "./images/desktop/image-gallery-orange.jpg";
+export { default as Icon } from "./images/icon-hamburger.svg";
+export { default as Logo } from "./images/logo.svg";

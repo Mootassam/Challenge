@@ -11,17 +11,9 @@
     padding: 0.3rem 300rem;
   }
   .app__navbar-log {
-    padding-left: 75px;
-    h1 {
-      color: var(--white);
-
-      font-size: xx-large;
-    }
+    padding-left: 70px;
     @media screen and (max-width: 900px) {
       padding: 0 0.2rem;
-      h1 {
-        font-size: x-large;
-      }
     }
   }
   .app_navbar-items {

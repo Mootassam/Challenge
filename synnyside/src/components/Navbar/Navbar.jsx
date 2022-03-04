@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { Icon, Logo } from "../../assets";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <div className='app__navbar'>
         <div className='app__navbar-log'>
-          <h1>sunnyside</h1>
+          <img src={Logo} alt='photo_logo' />
         </div>
         <ul className='app_navbar-items'>
           {["About", "Services", "Projects", "Contact"].map((item) => (
@@ -21,7 +22,11 @@ const Navbar = () => {
 
         <div className='app__navbar-menu'>
           <div className='app__navbar-icon'>
-            <HiMenuAlt4 onClick={() => setToggle(!toggle)} />
+            <img
+              src={Icon}
+              alt='photo_menu_mobile'
+              onClick={() => setToggle(!toggle)}
+            />
           </div>
         </div>
       </div>
