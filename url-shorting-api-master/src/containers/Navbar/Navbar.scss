@@ -1,0 +1,60 @@
+.app__navbar {
+  display: flex;
+  width: 100%;
+  padding: 4rem;
+  .app__navbar-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .app__navbar-logo {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 0 7rem;
+      .navbar-log {
+        padding: 0 3rem 0 0;
+      }
+      .navbar-items {
+        ul {
+          display: flex;
+          li {
+            color: var(--Gray);
+            padding: 0 1rem 0;
+            list-style: none;
+            &:hover {
+              color: var(--Very_Dark_Violet);
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .app__navbar-button {
+      padding: 0 7rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      align-items: center;
+      div {
+        padding: 0 1rem;
+        &:hover {
+          background-color: var(--Cyan);
+          height: 110%;
+          border-radius: 3rem;
+          a {
+            font-weight: bold;
+            text-align: center;
+            color: white;
+          }
+        }
+        a {
+          color: var(--Gray);
+          padding: 0 1.5rem 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
