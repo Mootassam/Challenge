@@ -35,23 +35,24 @@
       align-content: center;
       text-align: center;
       align-items: center;
-      div {
-        padding: 0 1rem;
+      div:nth-child(2) {
+        padding: 1rem 0.2rem;
+        background-color: var(--Cyan);
+        border-radius: 3rem;
+        width: max-content;
         &:hover {
-          background-color: var(--Cyan);
-          height: 110%;
-          border-radius: 3rem;
-          a {
-            font-weight: bold;
-            text-align: center;
-            color: white;
-          }
+          background-color: var(--hover);
         }
         a {
-          color: var(--Gray);
-          padding: 0 1.5rem 0;
-          text-decoration: none;
+          font-weight: bold;
+          text-align: center;
+          color: white;
         }
+      }
+      a {
+        color: var(--Gray);
+        padding: 0 1.5rem 0;
+        text-decoration: none;
       }
     }
   }
