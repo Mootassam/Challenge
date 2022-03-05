@@ -1,0 +1,46 @@
+.app__header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+
+  .app__header-text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+    padding: 5rem 4rem 1rem;
+    .header-text {
+      h1 {
+        font-size: 70px;
+        font-weight: 700;
+        color: var(--Very_Dark_Violet);
+        line-height: 80px;
+      }
+      .text-button {
+        margin-top: 2rem;
+        background-color: var(--Cyan);
+        width: max-content;
+        padding: 1rem 2.3rem;
+        border-radius: 3rem;
+        color: white;
+        font-weight: 700;
+
+        &:hover {
+          background-color: var(--hover);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .app__header-img {
+    padding-top: 2.5rem;
+    left: 0;
+    width: 50%;
+    img {
+      margin-left: 20%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

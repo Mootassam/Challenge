@@ -14,6 +14,7 @@ body {
   /*  Primary */
   --Cyan: hsl(180, 66%, 49%);
   --Dark_Violet: hsl(257, 27%, 26%);
+  --hover: hsl(180, 71%, 77%);
   /* Secondary */
   --Red: hsl(0, 87%, 67%);
   /* ### Neutral */

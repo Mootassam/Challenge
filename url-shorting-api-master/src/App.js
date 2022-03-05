@@ -1,10 +1,12 @@
 import React from "react";
-
+import Header from "./components/Header/Header";
+import "./App.css";
 import { Navbar } from "./containers";
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Navbar />
+      <Header />
     </div>
   );
 }
