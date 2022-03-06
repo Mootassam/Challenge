@@ -103,6 +103,11 @@
       color: white;
       font-weight: 700;
       list-style: none;
+      &:hover {
+        color: var(--Very_Dark_Violet);
+        font-weight: bold;
+        cursor: pointer;
+      }
     }
     hr {
       border-top: 0.2px solid;

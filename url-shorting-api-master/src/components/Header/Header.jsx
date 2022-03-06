@@ -20,15 +20,6 @@ const Header = () => {
           <img src={Working} alt='photo_header' />
         </div>
       </div>
-
-      <div className='app__header-link'>
-        <div className='header-input'>
-          <input type='text' />
-        </div>
-        <div className='button-link'>
-          <a href='#'>Shortin it!</a>
-        </div>
-      </div>
     </div>
   );
 };

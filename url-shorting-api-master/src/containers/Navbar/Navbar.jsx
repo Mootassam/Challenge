@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <div className='app__navbar-mobile'>
           <div className='mobile-toggle' onClick={() => setToggle(!toggle)}>
-            <img src={Toggle} alt='' />
+            <img src={Toggle} alt='photo_toggle' />
           </div>
         </div>
       </div>
