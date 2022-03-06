@@ -42,7 +42,7 @@
         }
       }
       @media screen and (max-width: 375px) {
-        width: 100%;
+        width: 100vw;
         padding: 0rem 1rem 0rem;
         order: 2;
 
@@ -64,12 +64,14 @@
       order: 1;
       width: 50%;
       padding-top: 0rem;
+      right: -5rem;
+      position: relative;
       img {
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
       }
       @media screen and (max-width: 375px) {
-        width: 100%;
+        width: 100vw;
       }
     }
   }

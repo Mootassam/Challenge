@@ -9,8 +9,8 @@ const Header = () => {
           <div className='header-text'>
             <h1> More than just shorter links</h1>
             <p>
-              build your brands recognition and get detailed inshights on how
-              your links are performing
+              Build your brands recognition and get detailed inshights on how
+              your links are performing.
             </p>
 
             <div className='text-button'>Get Started</div>
