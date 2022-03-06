@@ -1,6 +1,12 @@
 .app {
-  padding: 1rem 4rem 0;
+  padding: 1rem 7rem 0;
 }
 p {
   color: var(--Gray);
+}
+
+@media screen and (max-width: 375px) {
+  .app {
+    padding: 0 0.2rem;
+  }
 }

@@ -1,19 +1,28 @@
 .app__navbar {
   display: flex;
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
+  @media screen and (max-width: 375px) {
+    padding: 2rem;
+  }
   .app__navbar-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
     .app__navbar-logo {
       display: flex;
+      display: flex;
       justify-content: center;
       align-content: center;
+      text-align: center;
+      align-items: center;
       .navbar-log {
         padding: 0 3rem 0 0;
       }
       .navbar-items {
+        @media screen and (max-width: 375px) {
+          display: none;
+        }
         ul {
           display: flex;
           li {
@@ -30,6 +39,9 @@
       }
     }
     .app__navbar-button {
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
       display: flex;
       justify-content: center;
       align-content: center;
@@ -53,6 +65,60 @@
         color: var(--Gray);
         padding: 0 1.5rem 0;
         text-decoration: none;
+      }
+    }
+  }
+
+  .app__navbar-mobile {
+    .mobile-toggle {
+      right: 0;
+      background-color: var(--Grayish_Violet);
+      width: max-content;
+      height: max-content;
+    }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+}
+.mobile_list {
+  width: 100%;
+  padding: 1rem 2rem;
+  position: absolute;
+  text-align: center;
+
+  .mobile-items {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--Dark_Violet);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    li {
+      padding: 1rem;
+      color: white;
+      font-weight: 700;
+      list-style: none;
+    }
+    hr {
+      border-top: 0.2px solid;
+      color: var(--Grayish_Violet);
+    }
+    .mobile-button {
+      padding: 1rem 0;
+      div {
+        padding: 1rem 1.2rem 1.3rem;
+        color: white;
+        font-weight: bold;
+        border-radius: 3rem;
+        cursor: pointer;
+      }
+      .button-signup {
+        background-color: var(--Cyan);
+        &:hover {
+          background-color: var(--hover);
+        }
       }
     }
   }

@@ -1,45 +1,93 @@
-.app__header {
-  display: flex;
+.header {
   width: 100%;
   height: 80vh;
-  justify-content: space-between;
-  .app__header-text {
+  min-height: 80vh;
+  max-width: 100vw;
+  .app__header {
     display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-content: center;
-    padding: 3.7rem 4rem 1rem;
-    .header-text {
-      h1 {
-        font-size: 70px;
-        font-weight: 700;
-        color: var(--Very_Dark_Violet);
-        line-height: 80px;
-      }
-      .text-button {
-        margin-top: 2rem;
-        background-color: var(--Cyan);
-        width: max-content;
-        padding: 1rem 2.3rem;
-        border-radius: 3rem;
-        color: white;
-        font-weight: 700;
+    .app__header-text {
+      display: flex;
+      width: 50%;
+      align-items: flex-start;
+      align-content: space-between;
+      padding: 4.5rem 3rem 1rem;
+      .header-text {
+        h1 {
+          font-size: 5rem;
+          font-weight: 700;
+          color: rgb(53, 50, 62);
+          line-height: 80px;
+          font-style: normal;
+        }
+        .text-button {
+          margin-top: 2rem;
+          background-color: var(--Cyan);
+          width: max-content;
+          padding: 1rem 2.3rem;
+          border-radius: 3rem;
+          color: white;
+          font-weight: 700;
+          &:hover {
+            background-color: var(--hover);
+            cursor: pointer;
+          }
+        }
 
-        &:hover {
-          background-color: var(--hover);
-          cursor: pointer;
+        p {
+          font-weight: bold;
+          font-size: 21px;
         }
       }
     }
+    .app__header-img {
+      width: 50%;
+      padding-top: 1rem;
+      left: 0;
+      padding: 0 -50rem 0;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
-  .app__header-img {
-    padding-top: 1rem;
-    left: 0;
-    width: 50%;
-    img {
-      margin-left: 20%;
-      width: 100%;
-      object-fit: cover;
+
+  .app__header-link {
+    background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--Dark_Violet);
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    width: 70%;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 0.8rem;
+
+    .button-link {
+      background-color: var(--Cyan);
+      padding: 1.3rem 3rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      margin: 0 2rem;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: var(--hover);
+      }
+    }
+    .header-input {
+      input {
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 18px;
+      }
     }
   }
 }
