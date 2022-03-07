@@ -1,8 +1,8 @@
 .app__navbar {
   display: flex;
   width: 100%;
-  padding: 3rem;
-  @media screen and (max-width: 375px) {
+  padding: 3rem 10rem;
+  @media screen and (max-width: 900px) {
     padding: 2rem;
   }
   .app__navbar-menu {
@@ -20,7 +20,7 @@
         padding: 0 3rem 0 0;
       }
       .navbar-items {
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 900px) {
           display: none;
         }
         ul {
@@ -39,7 +39,7 @@
       }
     }
     .app__navbar-button {
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 900px) {
         display: none;
       }
       display: flex;
@@ -76,7 +76,7 @@
       width: max-content;
       height: max-content;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }

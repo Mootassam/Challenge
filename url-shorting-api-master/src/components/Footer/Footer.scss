@@ -5,6 +5,15 @@
   justify-content: space-around;
   padding: 6rem 0 7rem;
   align-items: flex-start;
+  margin: 0;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
   .app__footer-logo {
     padding-right: 7rem;
     height: max-content;
@@ -12,12 +21,17 @@
     img {
       fill: var(--white);
     }
+    @media screen and (max-width: 900px) {
+      padding: 0 2rem 2rem;
+      margin: 0;
+    }
   }
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
     display: inline-block;
+
     p {
       color: white;
       font-weight: bold;
@@ -34,16 +48,25 @@
         cursor: pointer;
       }
     }
+    @media screen and (max-width: 900px) {
+      padding: 1rem 0 1rem;
+      margin: 0;
+    }
   }
 
   .app__footer-feautures,
   .app__footer-resources,
   .app__footer-company {
-    margin: 0 -7rem;
+    margin: 0 -3rem;
   }
 
   .app__footer-media {
     width: max-content;
+
+    @media screen and (max-width: 900px) {
+      padding: 2rem 0 1rem;
+      margin: 0;
+    }
     ul {
       display: flex;
       flex-direction: row;
