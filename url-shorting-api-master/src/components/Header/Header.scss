@@ -1,21 +1,22 @@
 .header {
-  width: 100%;
+  max-width: 100%;
   height: 80vh;
   min-height: 80vh;
   padding: 0 7rem;
+
   @media screen and(max-width:900px) {
     padding: 0;
   }
   .app__header {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     @media screen and (max-width: 900px) {
       flex-direction: column;
     }
     .app__header-text {
       display: flex;
       flex: 1 1;
-      padding: 4.5rem 3rem 1rem;
+      padding: 5rem 3rem 1rem;
       .header-text {
         h1 {
           font-size: 5rem;
@@ -48,7 +49,7 @@
       }
 
       @media screen and (max-width: 900px) {
-        width: 100%;
+        max-width: 100%;
         padding: 0rem 1rem 0rem;
         order: 2;
         justify-content: center;
@@ -67,29 +68,16 @@
       }
     }
     .app__header-img {
+      padding: 1rem;
       flex: 1 1;
-      justify-content: center;
-      align-items: center;
-      right: -4rem;
+
       img {
-        width: max-content;
-      }
-      @media screen and (min-width: 1440px) {
-        img {
-          position: absolute;
-          width: max-content;
-        }
-      }
-      @media screen and (min-width: 1000px) {
-        img {
-          position: absolute;
-          right: -100px;
-          width: 50%;
-        }
+        width: 100%;
+        object-fit: cover;
       }
 
       @media screen and (max-width: 900px) {
-        width: 100%;
+        max-width: 100%;
         order: 1;
         img {
           width: 100vw;
