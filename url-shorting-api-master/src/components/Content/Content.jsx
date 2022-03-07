@@ -7,7 +7,7 @@ const Content = () => {
         <div className='content-form'>
           <div className='form'>
             <div className='form-input'>
-              <input type='text' />
+              <input type='text' placeholder='shorten a link here' />
             </div>
             <div className='form-button'>Shorten it!</div>
           </div>
@@ -31,7 +31,7 @@ const Content = () => {
                 <a className='link'>{item.link}</a>
                 <div className='link-copy'>
                   <a>{item.shorten}</a>
-                  <span className='copy'>copy</span>
+                  <span className='copy'>Copy</span>
                 </div>
               </div>
             ))}
