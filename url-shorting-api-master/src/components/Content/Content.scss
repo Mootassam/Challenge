@@ -8,22 +8,29 @@
   align-items: center;
   align-content: center;
   top: 0;
+  @media screen and(max-width: 900px) {
+    padding: 0rem 1rem 0rem;
+  }
   .app__content-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 0rem 0 2rem;
     width: 100%;
-
+    @media screen and(max-width: 900px) {
+      padding: 0;
+    }
     .content-form {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       .form {
+        @media screen and(max-width: 900px) {
+          top: -5rem;
+        }
         width: 100%;
         top: -4rem;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,9 +42,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        @media screen and(max-width: 900px) {
+          flex-direction: column;
+          padding: 1.6rem;
+        }
         .form-input {
           width: 75%;
-
+          @media screen and(max-width: 900px) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0.5rem;
+          }
           input {
             height: 3.5rem;
             width: 100%;
@@ -49,6 +64,11 @@
           }
         }
         .form-button {
+          @media screen and(max-width: 900px) {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+          }
           margin: 0 2rem;
           width: max-content;
           padding: 1.2rem 2rem;
@@ -64,11 +84,15 @@
       }
 
       .form-link {
+        @media screen and(max-width: 900px) {
+          display: none;
+        }
         display: flex;
         width: 100%;
         position: relative;
         flex-direction: column;
         top: -4rem;
+
         .link-short {
           margin-top: 1rem;
           padding: 1.8rem 2rem;
