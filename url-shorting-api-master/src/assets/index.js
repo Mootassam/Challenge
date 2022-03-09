@@ -5,3 +5,6 @@ export { default as Facebook } from "./images/icon-facebook.svg";
 export { default as Twitter } from "./images/icon-twitter.svg";
 export { default as Printest } from "./images/icon-pinterest.svg";
 export { default as Instgram } from "./images/icon-instagram.svg";
+export { default as recognition } from "./images/icon-brand-recognition.svg";
+export { default as detailed } from "./images/icon-detailed-records.svg";
+export { default as customizable } from "./images/icon-fully-customizable.svg";
