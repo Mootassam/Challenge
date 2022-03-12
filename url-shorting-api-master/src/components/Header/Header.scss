@@ -3,7 +3,12 @@
   height: 80vh;
   min-height: 80vh;
   padding: 0 7rem;
-
+  @media screen and (max-width: 1440px) {
+    padding: 0 5rem;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 3rem;
+  }
   @media screen and(max-width:900px) {
     padding: 0;
     height: 90vh;
@@ -18,16 +23,21 @@
       display: flex;
       flex: 1 1;
       padding: 5rem 3rem 1rem;
+      @media screen and (max-width: 1440px) {
+        padding: 5rem 0rem 1rem;
+      }
       .header-text {
         h1 {
           font-size: 5rem;
           font-weight: 700;
           color: rgb(53, 50, 62);
           font-style: normal;
+          line-height: 80px;
         }
         @media screen and (max-width: 1440px) {
           h1 {
-            font-size: 3.8rem;
+            font-size: 3.3rem;
+            line-height: 55px;
           }
         }
         .text-button {

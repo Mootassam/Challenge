@@ -8,6 +8,12 @@
   align-items: center;
   align-content: center;
   top: 0;
+  @media screen and (max-width: 1440px) {
+    padding: 0 5rem;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 3rem;
+  }
   @media screen and(max-width: 900px) {
     padding: 0rem 1rem 0rem;
   }
@@ -132,12 +138,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 4rem;
-    @media screen and(max-width: 900px) {
-      flex-direction: column;
-      .content-statistics-title {
-        margin: 1rem;
-      }
-    }
+
     .content-statistics-title {
       margin: 5rem;
       text-align: center;
@@ -146,6 +147,15 @@
         color: #35323e;
         padding: 1rem;
         font-style: normal;
+      }
+
+      @media screen and(max-width: 900px) {
+        margin: 0;
+        padding-bottom: 2rem;
+        h1 {
+          font-size: 2rem;
+          padding: 1rem;
+        }
       }
     }
 
@@ -215,4 +225,9 @@
   top: -10rem;
   width: 70%;
   height: 8px;
+  @media screen and(max-width: 900px) {
+    top: 0rem;
+    width: 8px;
+    height: 70%;
+  }
 }

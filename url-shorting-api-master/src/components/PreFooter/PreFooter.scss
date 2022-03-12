@@ -11,7 +11,12 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-
+  @media screen and (max-width: 1440px) {
+    padding: 5rem;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 3rem;
+  }
   @media screen and (max-width: 900px) {
     background-image: url("../../assets/images/bg-boost-mobile.svg");
     padding: 1.5rem;
