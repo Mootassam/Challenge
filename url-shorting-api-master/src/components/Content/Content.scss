@@ -132,13 +132,19 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 4rem;
+    @media screen and(max-width: 900px) {
+      flex-direction: column;
+      .content-statistics-title {
+        margin: 1rem;
+      }
+    }
     .content-statistics-title {
       margin: 5rem;
       text-align: center;
+      font-weight: bold;
       h1 {
         color: #35323e;
         padding: 1rem;
-        font-weight: bold;
         font-style: normal;
       }
     }
@@ -148,6 +154,13 @@
       flex-direction: row;
       height: auto;
       position: relative;
+      @media screen and(max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .dashboard {
         width: 100%;
         display: flex;
@@ -157,11 +170,19 @@
         border-radius: 0.5rem;
         position: relative;
         z-index: 999;
+        @media screen and(max-width: 900px) {
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          text-align: center;
+        }
         h3 {
           color: #35323e;
           font-weight: bold;
           padding: 0 0 1rem;
         }
+
         .content-logo {
           display: flex;
           background-color: var(--Dark_Violet);
@@ -170,6 +191,7 @@
           border-radius: 60%;
           position: relative;
           top: -2.3rem;
+
           img {
             width: 100%;
             object-fit: cover;
@@ -187,6 +209,7 @@
 }
 .dashboard-bar {
   display: flex;
+  flex-direction: row;
   position: relative;
   background-color: var(--Cyan);
   top: -10rem;

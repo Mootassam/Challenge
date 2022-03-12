@@ -80,7 +80,6 @@ const Content = () => {
               </>
             ))}
           </div>
-
           <div className='dashboard-bar'></div>
         </div>
       </div>
