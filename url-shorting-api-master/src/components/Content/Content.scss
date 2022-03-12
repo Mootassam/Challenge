@@ -177,16 +177,19 @@
         }
       }
       .dashboard:nth-child(2) {
-        top: 3rem;
+        top: 2.1rem;
       }
       .dashboard:nth-child(3) {
-        top: 6rem;
-      }
-      .bar {
-        display: flex;
-        background-color: aquamarine;
-        width: 10px;
+        top: 4.3rem;
       }
     }
   }
+}
+.dashboard-bar {
+  display: flex;
+  position: relative;
+  background-color: var(--Cyan);
+  top: -10rem;
+  width: 70%;
+  height: 8px;
 }
