@@ -11,6 +11,16 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+
+  @media screen and (max-width: 900px) {
+    background-image: url("../../assets/images/bg-boost-mobile.svg");
+    padding: 1.5rem;
+    text-align: center;
+    height: 40vh;
+    h1 {
+      font-size: 27px;
+    }
+  }
   h1 {
     color: var(--white);
     font-weight: bold;
